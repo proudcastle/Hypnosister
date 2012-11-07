@@ -20,15 +20,24 @@
     return self;
 }
 
-- (BOOL)becomeFirstResponder
+- (BOOL)canBecomeFirstResponder
 {
     return YES;
 }
 
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event
 {
-    NSLog(@"Device started shaking");
-    [self setCircleColor:[UIColor redColor]];
+    if (motion == UIEventSubtypeMotionShake) {
+        NSLog(@"Device started shaking");
+        [self setCircleColor:[UIColor redColor]];
+    }
+}
+
+- (void)setCircleColor:(UIColor *)circleColor
+{
+    _circleColor = circleColor;
+    [self setNeedsDisplay];
+    
 }
 
 - (void)drawRect:(CGRect)rect
