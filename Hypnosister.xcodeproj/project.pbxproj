@@ -16,6 +16,7 @@
 		28ACE24F164AF04600D527D2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 28ACE24E164AF04600D527D2 /* Default.png */; };
 		28ACE251164AF04600D527D2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28ACE250164AF04600D527D2 /* Default@2x.png */; };
 		28ACE253164AF04600D527D2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 28ACE252164AF04600D527D2 /* Default-568h@2x.png */; };
+		28ACE25E164AF43000D527D2 /* HypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28ACE25D164AF43000D527D2 /* HypnosisView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		28ACE24E164AF04600D527D2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		28ACE250164AF04600D527D2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		28ACE252164AF04600D527D2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		28ACE25C164AF43000D527D2 /* HypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HypnosisView.h; path = ../HypnosisView.h; sourceTree = "<group>"; };
+		28ACE25D164AF43000D527D2 /* HypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HypnosisView.m; path = ../HypnosisView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +83,8 @@
 			children = (
 				28ACE24B164AF04600D527D2 /* HypnosisterAppDelegate.h */,
 				28ACE24C164AF04600D527D2 /* HypnosisterAppDelegate.m */,
+				28ACE25C164AF43000D527D2 /* HypnosisView.h */,
+				28ACE25D164AF43000D527D2 /* HypnosisView.m */,
 				28ACE243164AF04600D527D2 /* Supporting Files */,
 			);
 			path = Hypnosister;
@@ -167,6 +172,7 @@
 			files = (
 				28ACE249164AF04600D527D2 /* main.m in Sources */,
 				28ACE24D164AF04600D527D2 /* HypnosisterAppDelegate.m in Sources */,
+				28ACE25E164AF43000D527D2 /* HypnosisView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
