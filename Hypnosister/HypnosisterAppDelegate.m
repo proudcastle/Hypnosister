@@ -8,6 +8,7 @@
 
 #import "HypnosisterAppDelegate.h"
 #import "HypnosisView.h"
+#import "BNRLogo.h"
 
 @implementation HypnosisterAppDelegate
 
@@ -18,6 +19,10 @@
 
     HypnosisView *view = [[HypnosisView alloc] initWithFrame:[[self window] bounds]];
     [[self window] addSubview:view];
+    
+    UIImage *tempImg = [UIImage imageNamed:@"Icon.png"];
+    BNRLogo *logoView = [[BNRLogo alloc] initWithFrame:CGRectMake(50, 50, tempImg.size.width+10, tempImg.size.height+10)];
+    [[self window] addSubview:logoView];
     
     BOOL success = [view becomeFirstResponder];
     if (success) {
